@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleVoiceroid2Proxy", "SimpleVoiceroid2Proxy\SimpleVoiceroid2Proxy.csproj", "{163B3D21-D738-4F74-9362-4C65E5F0E15B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{163B3D21-D738-4F74-9362-4C65E5F0E15B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{163B3D21-D738-4F74-9362-4C65E5F0E15B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{163B3D21-D738-4F74-9362-4C65E5F0E15B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{163B3D21-D738-4F74-9362-4C65E5F0E15B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
