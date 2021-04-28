@@ -1,0 +1,26 @@
+name: Build
+
+on:
+  push:
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v1
+
+      - name: MSBuild
+        run: msbuild SimpleVoiceroid2Proxy.sln -property:Configuration="Release" -property:Platform="Any CPU" -m -restore
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: SimpleVoiceroid2Proxy.zip
+          path: SimpleVoiceroid2Proxy/bin/Release
