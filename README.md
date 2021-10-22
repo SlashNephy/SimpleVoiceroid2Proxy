@@ -2,6 +2,8 @@
 
 VOICEROID2 を HTTP API で操作して読み上げさせるコンソールアプリケーションです。(要管理者権限)
 
+[Voiceroid2Proxy](https://github.com/kanosaki/Voiceroid2Proxy) を基に機能拡張を行いました。
+
 ![main](https://github.com/SlashNephy/SimpleVoiceroid2Proxy/blob/master/Images/main.png?raw=true)
 
 ## ACT.Hojoring との連携
