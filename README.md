@@ -1,6 +1,6 @@
 # SimpleVoiceroid2Proxy
 
-VOICEROID2 を REST API で操作して読み上げさせるコンソールアプリケーションです。(要管理者権限)
+VOICEROID2 を HTTP API で操作して読み上げさせるコンソールアプリケーションです。(要管理者権限)
 
 ![main](https://github.com/SlashNephy/SimpleVoiceroid2Proxy/blob/master/Images/main.png?raw=true)
 
@@ -11,9 +11,9 @@ FFXIV プレイ中に読み上げが行われてもウィンドウが前面に�
 
 ![act](https://github.com/SlashNephy/SimpleVoiceroid2Proxy/blob/master/Images/act.png?raw=true)
 
-## REST API
+## HTTP API
 
-現在実装されている REST API は以下の通りです。  
+現在実装されている HTTP API は以下の通りです。  
 LAN に `4532/tcp` を開放するので同一ネットワーク内から操作が可能です。
 
 - `GET /talk`  
@@ -39,7 +39,7 @@ LAN に `4532/tcp` を開放するので同一ネットワーク内から操作�
 特定の文字列を `text` に含めることで特殊な操作を行えます。
 
 - `結月ゆかり＞`  
-    話者名を指定することで特定の話者に読み上げさせることが可能です。(VOICEROID2 の機能)  
+    話者名を指定することで特定の話者に読み上げさせることが可能です。(VOICEROID2 の機能で、VOICEROID2 側の設定から記号を変更できます)  
     他の話者も指定可能です。  
     この指定は `text` の先頭で行う必要があります。
 
