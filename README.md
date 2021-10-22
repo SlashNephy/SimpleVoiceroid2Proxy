@@ -4,14 +4,14 @@ VOICEROID2 を HTTP API で操作して読み上げさせるコンソールア�
 
 [Voiceroid2Proxy](https://github.com/kanosaki/Voiceroid2Proxy) を基に機能拡張を行いました。
 
-![main](https://github.com/SlashNephy/SimpleVoiceroid2Proxy/blob/master/Images/main.png?raw=true)
+![main](https://user-images.githubusercontent.com/7302150/138386989-04c02510-18d7-4903-be67-ceb30bec3771.png)
 
 ## ACT.Hojoring との連携
 
 [ACT.Hojoring](https://github.com/anoyetta/ACT.Hojoring) で棒読みちゃんの代わりに使用することで **低遅延** **UI 妨害のない** 読み上げが可能です。  
 FFXIV プレイ中に読み上げが行われてもウィンドウが前面に出現しないため, 操作がブロックされることはありません。
 
-![act](https://github.com/SlashNephy/SimpleVoiceroid2Proxy/blob/master/Images/act.png?raw=true)
+![act](https://user-images.githubusercontent.com/7302150/138386948-cda0e694-c93e-47e9-a54a-eee8a00819be.png)
 
 ## HTTP API
 
