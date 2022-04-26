@@ -20,7 +20,7 @@ jobs:
         run: msbuild SimpleVoiceroid2Proxy.sln -property:Configuration="Release" -property:Platform="Any CPU" -m -restore
 
       - name: Upload Artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: SimpleVoiceroid2Proxy.zip
           path: SimpleVoiceroid2Proxy/bin/Release
