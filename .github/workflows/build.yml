@@ -2,6 +2,8 @@ name: Build
 
 on:
   push:
+    paths:
+      - 'SimpleVoiceroid2Proxy/**'
 
   workflow_dispatch:
 
@@ -22,5 +24,19 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: SimpleVoiceroid2Proxy.zip
+          name: SimpleVoiceroid2Proxy
+          if-no-files-found: error
           path: SimpleVoiceroid2Proxy/bin/Release
+
+      - name: Create Release
+        shell: powershell
+        if: startsWith(github.ref, 'refs/tags/')
+        run: Compress-Archive -Path SimpleVoiceroid2Proxy/bin/Release/* -DestinationPath SimpleVoiceroid2Proxy.zip
+
+      - name: Upload Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: SimpleVoiceroid2Proxy.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
