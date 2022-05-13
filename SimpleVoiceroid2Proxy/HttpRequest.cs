@@ -92,7 +92,7 @@ namespace SimpleVoiceroid2Proxy
             var payload = new Dictionary<string, object>
             {
                 {"success", code == HttpStatusCode.OK},
-                {"message", message}
+                {"message", message},
             };
             var content = JsonConvert.SerializeObject(payload, Formatting.Indented);
 

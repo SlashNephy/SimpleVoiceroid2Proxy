@@ -31,7 +31,7 @@ namespace SimpleVoiceroid2Proxy
                 FileName = "netsh",
                 Arguments = $"http add urlacl url=http://+:{Port}/ user=Everyone",
                 Verb = "runas",
-                WindowStyle = ProcessWindowStyle.Minimized
+                WindowStyle = ProcessWindowStyle.Minimized,
             });
             process?.WaitForExit();
 

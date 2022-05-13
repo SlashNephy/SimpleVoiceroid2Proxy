@@ -139,7 +139,7 @@ namespace SimpleVoiceroid2Proxy
             {
                 while (queue.Reader.TryRead(out var text))
                 {
-                    await SpeakAsync(text!);
+                    await SpeakAsync(text);
                 }
             }
         }
@@ -177,7 +177,7 @@ namespace SimpleVoiceroid2Proxy
             return (Process.GetProcessesByName("VoiceroidEditor").FirstOrDefault() ?? Process.Start(new ProcessStartInfo
             {
                 FileName = FindVoiceroidPath(),
-                WindowStyle = ProcessWindowStyle.Minimized
+                WindowStyle = ProcessWindowStyle.Minimized,
             }))!;
         }
 
