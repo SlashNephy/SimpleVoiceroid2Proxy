@@ -74,6 +74,14 @@ namespace SimpleVoiceroid2Proxy
                     text = json?.text;
                     break;
                 }
+                case "OPTIONS":
+                {
+                    response.AddHeader("Access-Control-Allow-Method", "GET, POST, OPTIONS");
+                    response.AddHeader("Access-Control-Allow-Headers", "Content-Type");
+                    response.AddHeader("Access-Control-Max-Age", "7200");
+                    response.StatusCode = (int) HttpStatusCode.NoContent;
+                    return;
+                }
             }
 
             if (string.IsNullOrWhiteSpace(text))
