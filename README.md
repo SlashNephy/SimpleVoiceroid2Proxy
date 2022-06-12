@@ -15,7 +15,7 @@ FFXIV プレイ中に読み上げが行われてもウィンドウが前面に�
 
 ## Discord との連携
 
-BetterDiscord 用のプラグイン [VoiceChatNotificationsForVoiceroid2Proxy.plugin.js](https://gist.github.com/SlashNephy/eba2e78c4a55dfaef51d8d9a984fff2b) を使用することで, VC 関連の通知 (VC に人が入ってきた場合, ミュートした場合など) を VOICEROID2 に読み上げさせることが可能です。
+BetterDiscord 用のプラグイン [VoiceChatNotificationsForVoiceroid2Proxy.plugin.js]([https://gist.github.com/SlashNephy/eba2e78c4a55dfaef51d8d9a984fff2b](https://github.com/SlashNephy/.github/blob/master/env/discord/plugins/VoiceChatNotificationsForVoiceroid2Proxy.plugin.js)) を使用することで, VC 関連の通知 (VC に人が入ってきた場合, ミュートした場合など) を VOICEROID2 に読み上げさせることが可能です。
 
 ## HTTP API
 
