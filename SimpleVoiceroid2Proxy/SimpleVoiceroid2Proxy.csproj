@@ -61,7 +61,7 @@
             <Version>13.0.3</Version>
         </PackageReference>
         <PackageReference Include="RM.Friendly.WPFStandardControls">
-            <Version>1.59.0</Version>
+            <Version>1.59.1</Version>
         </PackageReference>
         <PackageReference Include="System.Threading.Channels">
             <Version>7.0.0</Version>
