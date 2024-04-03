@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v1
+        uses: microsoft/setup-msbuild@v2
 
       - name: MSBuild
         run: msbuild SimpleVoiceroid2Proxy.sln -property:Configuration="Release" -property:Platform="Any CPU" -m -restore
