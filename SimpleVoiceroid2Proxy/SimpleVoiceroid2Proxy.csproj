@@ -7,6 +7,7 @@
     <Nullable>enable</Nullable>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Web" />
