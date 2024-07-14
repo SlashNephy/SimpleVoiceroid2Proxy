@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Net;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -14,6 +15,14 @@ public sealed class HttpContext(HttpListenerContext Context) : IDisposable
     public HttpListenerRequest Request => Context.Request;
     public HttpListenerResponse Response => Context.Response;
     public NameValueCollection Query => HttpUtility.ParseQueryString(Request.Url.Query, Encoding.UTF8);
+    public string? RequestMediaType
+    {
+        get
+        {
+            MediaTypeHeaderValue.TryParse(Request.ContentType, out var value);
+            return value.MediaType;
+        }
+    }
 
     public async Task RespondJson(HttpStatusCode code, Dictionary<string, object?> payload)
     {

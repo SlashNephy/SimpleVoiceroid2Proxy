@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Net;
+using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace SimpleVoiceroid2Proxy.Server;
 
@@ -47,13 +50,26 @@ public sealed class Controller
 
     private async Task HandleGetTalkAsync(HttpContext context)
     {
-        await HandleTalkAsync(context, context.Query["text"]);
+        await HandleTalkAsync(context, context.Query.GetValues("text")?.FirstOrDefault());
     }
 
     private async Task HandlePostTalkAsync(HttpContext context)
     {
-        var payload = await JsonSerializer.DeserializeAsync<Dictionary<string, object?>>(context.Request.InputStream);
-        await HandleTalkAsync(context, (string?)payload!["text"]);
+        string? text = null;
+        if (context.RequestMediaType == "application/x-www-form-urlencoded")
+        {
+            using var reader = new StreamReader(context.Request.InputStream);
+            var body = reader.ReadToEnd();
+            var form = HttpUtility.ParseQueryString(body);
+            text = form.GetValues("text")?.FirstOrDefault();
+        }
+        else
+        {
+            var payload = await JsonSerializer.DeserializeAsync<Dictionary<string, JsonElement>>(context.Request.InputStream);
+            text = payload!["text"].GetString();
+        }
+
+        await HandleTalkAsync(context, text);
     }
 
     private async Task HandleTalkAsync(HttpContext context, string? text)
