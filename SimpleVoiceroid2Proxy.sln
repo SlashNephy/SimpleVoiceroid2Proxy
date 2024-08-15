@@ -1,6 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleVoiceroid2Proxy", "SimpleVoiceroid2Proxy\SimpleVoiceroid2Proxy.csproj", "{163B3D21-D738-4F74-9362-4C65E5F0E15B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SapiComServer", "SapiComServer\SapiComClient.csproj", "{97333761-A00A-4BF3-9B97-3061878B42BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +17,16 @@ Global
 		{163B3D21-D738-4F74-9362-4C65E5F0E15B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{163B3D21-D738-4F74-9362-4C65E5F0E15B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{163B3D21-D738-4F74-9362-4C65E5F0E15B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97333761-A00A-4BF3-9B97-3061878B42BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97333761-A00A-4BF3-9B97-3061878B42BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97333761-A00A-4BF3-9B97-3061878B42BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97333761-A00A-4BF3-9B97-3061878B42BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7392476F-DED6-4B1E-8E56-B912B56E2535}
 	EndGlobalSection
 EndGlobal
+
