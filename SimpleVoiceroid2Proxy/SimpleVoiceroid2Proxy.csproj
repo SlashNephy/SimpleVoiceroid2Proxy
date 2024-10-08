@@ -14,7 +14,7 @@
     <Reference Include="System.Web" />
     <PackageReference Include="Codeer.Friendly.Windows.Grasp" Version="2.14.2" />
     <PackageReference Include="RM.Friendly.WPFStandardControls" Version="1.59.1" />
-    <PackageReference Include="System.Text.Json" Version="8.0.4" />
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
     <PackageReference Include="System.Threading.Channels" Version="8.0.0" />
   </ItemGroup>
 </Project>
