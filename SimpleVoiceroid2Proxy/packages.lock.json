@@ -4,11 +4,11 @@
     ".NETFramework,Version=v4.8.1": {
       "Codeer.Friendly.Windows.Grasp": {
         "type": "Direct",
-        "requested": "[2.14.2, )",
-        "resolved": "2.14.2",
-        "contentHash": "Q6pFtt5s3Tg18xz3AGAvi1jZeid+uZocRdLapd9fS70Tg6j4Two2y+q2h+ABgY/GfmQIpfUlPRGlEmzXgKHvlg==",
+        "requested": "[2.15.0, )",
+        "resolved": "2.15.0",
+        "contentHash": "3M4NEwfdaBdFhZQlq228biqLl4w8jvoZcstVqZP5wg36inf7C5d3X/oaPQPVMob1QENBXZ3ZLxukJjQE0Dk5tw==",
         "dependencies": {
-          "Codeer.Friendly.Windows": "2.17.0"
+          "Codeer.Friendly.Windows": "2.18.0"
         }
       },
       "Microsoft.NETFramework.ReferenceAssemblies": {
@@ -56,15 +56,15 @@
       },
       "Codeer.Friendly": {
         "type": "Transitive",
-        "resolved": "2.6.1",
-        "contentHash": "nhYjSzXTMR0yc5fAl7Pr55eijb40dZnf41SbWPycdZ1IjitRM7RvLGwxO3/dpVVx9s1QTjomn26MfQnvFxsujw=="
+        "resolved": "2.7.0",
+        "contentHash": "WblR8Y6kaIqi9vmgZ0j8X0gdoZ6HEkDxsLEtRiBXZsnhKXzqTs6Qj40hlhjhyNzxQESTq18fXgRYVM1CGUNX7g=="
       },
       "Codeer.Friendly.Windows": {
         "type": "Transitive",
-        "resolved": "2.17.0",
-        "contentHash": "2aGvdmEiFSOHw3I06esSw1MVeLBl9yxTuC36E12Yne3NjMalSQqA/uiVpcq/PFpZWJYvm9ccM3NfN4G5RliEiQ==",
+        "resolved": "2.18.0",
+        "contentHash": "/uhokzQwYBJwFunNi+0filmJRlUFfZc+Y3Gz0HLwDqoZZ1/+6MoX3wTTsMEl2lefgm64ZsbbZ8fPyhY8njIscg==",
         "dependencies": {
-          "Codeer.Friendly": "2.6.1"
+          "Codeer.Friendly": "2.7.0"
         }
       },
       "Codeer.TestAssistant.GeneratorToolKit": {
