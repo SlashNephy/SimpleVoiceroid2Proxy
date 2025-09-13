@@ -4,9 +4,9 @@
     ".NETFramework,Version=v4.8.1": {
       "Codeer.Friendly.Windows.Grasp": {
         "type": "Direct",
-        "requested": "[2.15.0, )",
-        "resolved": "2.15.0",
-        "contentHash": "3M4NEwfdaBdFhZQlq228biqLl4w8jvoZcstVqZP5wg36inf7C5d3X/oaPQPVMob1QENBXZ3ZLxukJjQE0Dk5tw==",
+        "requested": "[2.16.0, )",
+        "resolved": "2.16.0",
+        "contentHash": "u4KiwsITpzt+lVTaCE/gObg1ELQ1Mh29Qq2FoeCVQ60BkllIj3IRVOKZ9PF86fcT4omc/ptanhTJ74dtp9lNRA==",
         "dependencies": {
           "Codeer.Friendly.Windows": "2.18.0"
         }
