@@ -22,12 +22,12 @@
       },
       "RM.Friendly.WPFStandardControls": {
         "type": "Direct",
-        "requested": "[1.61.0, )",
-        "resolved": "1.61.0",
-        "contentHash": "9xGR268sVZedrZazLsI0S6CTnwRtvPpVLlsrhncQTbQtf03dyt/d8I31qSwreLMyrtwi5F234FtiDvs/V+DFLQ==",
+        "requested": "[1.63.0, )",
+        "resolved": "1.63.0",
+        "contentHash": "FuvS7toX4ww/6y9GKGKOyKOJfqcthaaN5Bx9FjhGS96pHp4N0FSsw0ZWGl+5YPKulfNubVExGi+u6oFtjOX/6A==",
         "dependencies": {
           "Codeer.Friendly.Windows.Grasp": "2.16.0",
-          "Codeer.TestAssistant.GeneratorToolKit": "3.13.0"
+          "Codeer.TestAssistant.GeneratorToolKit": "3.15.0"
         }
       },
       "System.Text.Json": {
@@ -71,8 +71,8 @@
       },
       "Codeer.TestAssistant.GeneratorToolKit": {
         "type": "Transitive",
-        "resolved": "3.13.0",
-        "contentHash": "m+Lizo1XwZsWRo71S1se9LYdUPEcHx1TbkpZcmuqCyYyF9G1OqLBRvNWVYvbIWM+yb6ARKbtC8k7qPpzp63ASg=="
+        "resolved": "3.15.0",
+        "contentHash": "L2K2LwLr3x1319yl6IRyLIupCXLAmeUWj5+yiMj8girm5H0qtGDiGk6EX42Q8sAscCDVmJKrWe3JPQWnPROfiQ=="
       },
       "Microsoft.Bcl.AsyncInterfaces": {
         "type": "Transitive",
