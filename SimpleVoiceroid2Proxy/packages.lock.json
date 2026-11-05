@@ -22,9 +22,9 @@
       },
       "RM.Friendly.WPFStandardControls": {
         "type": "Direct",
-        "requested": "[1.63.0, )",
-        "resolved": "1.63.0",
-        "contentHash": "FuvS7toX4ww/6y9GKGKOyKOJfqcthaaN5Bx9FjhGS96pHp4N0FSsw0ZWGl+5YPKulfNubVExGi+u6oFtjOX/6A==",
+        "requested": "[1.65.0, )",
+        "resolved": "1.65.0",
+        "contentHash": "L0em9DrToubMvMNoOYMd+LDmM0aYovxgnThNDPeLNRNw7gf3WRaW8WWpV7dHWRJSX4auxjQ7PYEDOb3TpWsu9Q==",
         "dependencies": {
           "Codeer.Friendly.Windows.Grasp": "2.16.0",
           "Codeer.TestAssistant.GeneratorToolKit": "3.15.0"
